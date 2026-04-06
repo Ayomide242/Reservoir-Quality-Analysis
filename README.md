@@ -106,4 +106,4 @@ The input dataset is a **LAS** file (`Well_A.las`) containing the following curv
 
 ## Author
 
-Developed as a capstone project for the **Geoscience Catalyst Africa (GCA)** training.
+Ayomide Ogunlade
