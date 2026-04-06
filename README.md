@@ -12,11 +12,11 @@ This project focuses on identifying the best quality rock (reservoir) using data
 
 ## Workflow
 
-1. **Import Libraries** — `lasio`, `numpy`, `pandas`, `matplotlib`, `seaborn`
-2. **Dataset Loading & Cleaning** — Load `.LAS` file, handle null values, inspect well metadata and curve information
-3. **Statistical Facies Discrimination** — Gamma Ray histogram analysis to justify and select GR cutoffs
-4. **Feature Engineering** — Compute the Reservoir Quality Index (RQI)
-5. **Net Pay Quantification** — Apply pay sand criteria and calculate gross thickness, net pay, and NTG
+1. **Import Libraries**: `lasio`, `numpy`, `pandas`, `matplotlib`, `seaborn`
+2. **Dataset Loading & Cleaning**: Load `.LAS` file, handle null values, inspect well metadata and curve information
+3. **Statistical Facies Discrimination**: Gamma Ray histogram analysis to justify and select GR cutoffs
+4. **Feature Engineering**: Compute the Reservoir Quality Index (RQI)
+5. **Net Pay Quantification**: Apply pay sand criteria and calculate gross thickness, net pay, and NTG
 
 ---
 
@@ -47,13 +47,13 @@ RQI = Porosity × (1 − GR_norm)
 GR values are normalised to a 0–1 range (0 = cleanest sand, 1 = purest shale), making RQI a dimensionless index that highlights intervals that are **both clean and porous** — the most productive sands.
 
 ### Net Pay Criteria
-Pay sands are defined by simultaneous satisfaction of:
+Pay sands are defined by the simultaneous satisfaction of:
 - **GR ≤ 60 API** (clean sand)
 - **Porosity ≥ 0.15** (sufficient storage capacity)
 
 ---
 
-## Visualisations
+## Visualizations
 
 - **4-track well log plot** — GR (with cutoff), RT, RHOB, NPHI
 - **Correlation heatmap** — relationships between all log curves
@@ -63,14 +63,14 @@ Pay sands are defined by simultaneous satisfaction of:
 
 ---
 
-## Technologies Used
+## Tools Used
 
 | Library | Purpose |
 |---|---|
 | `lasio` | Read and parse `.LAS` well log files |
 | `pandas` | Dataframe manipulation and filtering |
 | `numpy` | Numerical operations and null value handling |
-| `matplotlib` | Well log track plots and visualisations |
+| `matplotlib` | Well log track plots and visualizations |
 | `seaborn` | Correlation heatmap |
 
 ---
@@ -91,7 +91,7 @@ pip install lasio numpy pandas matplotlib seaborn
 
 ## Dataset
 
-The input dataset is a **LAS (Log ASCII Standard)** file (`Well_A.las`) containing the following curves:
+The input dataset is a **LAS** file (`Well_A.las`) containing the following curves:
 
 | Curve | Unit | Description |
 |---|---|---|
@@ -102,10 +102,8 @@ The input dataset is a **LAS (Log ASCII Standard)** file (`Well_A.las`) containi
 | NPHI / POR | v/v | Neutron Porosity |
 | CALF | in | Caliper |
 
-> **Note:** The LAS file is not included in this repository. Please provide your own dataset or contact the author.
-
 ---
 
 ## Author
 
-Developed as a capstone project for the **Geoscience & Computing Analytics (GCA)** programme.
+Developed as a capstone project for the **Geoscience Catalyst Africa (GCA)** training.
